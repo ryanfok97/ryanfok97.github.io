@@ -3,23 +3,9 @@ import { Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 
 class NavBar extends Component {
-    componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll);
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener('scroll', this.handleScroll);
-    }
-
-    handleScroll(e) {
-
-    }
-
     render() {
-
-
         return (
-            <Navbar expand='md' fixed='top'>
+            <Navbar expand='md' fixed='top' bg={this.props.bg} className='transition'>
                 <Navbar.Brand href='#home'>Ryan Fok</Navbar.Brand>
                 <Navbar.Collapse>
                     <Nav className="ml-auto">
