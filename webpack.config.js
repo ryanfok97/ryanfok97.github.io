@@ -8,6 +8,7 @@ module.exports = {
     output: {
         path: DIST_DIR,
         filename: 'bundle.js',
+        publicPath: '/public/'
     },
     resolve: {
         extensions: ['.js', '.jsx', '.json', '.css']
