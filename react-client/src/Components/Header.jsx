@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, Jumbotron, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import bgimg from '../../../IMG_6925.jpg';
 
-class NavBar extends Component {
+class Header extends Component {
     render() {
         return (
             <header>
@@ -19,9 +20,21 @@ class NavBar extends Component {
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
+                <Jumbotron fluid
+                           ref={this.props.jumbotronRef}
+                           style={{height: '100vh', background: `url('${bgimg}') fixed`, backgroundSize: 'cover'}}>
+                    <Container>
+                        <h3>
+                            What's up? I'm
+                        </h3>
+                        <h1>
+                            R<span style={{fontSize: '.8em'}}>YAN</span> F<span style={{fontSize: '.8em'}}>OK</span>
+                        </h1>
+                    </Container>
+                </Jumbotron>
             </header>
         )
     }
 }
 
-export default NavBar;
+export default Header;

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { browserHistory } from 'react-router';
-import Home from './Pages/Home';
-import About from './Pages/About';
-import Experience from './Pages/Experience';
-import NavBar from './Header/NavBar';
-import Footer from './Footer/Footer'
+import Home from '../Pages/Home';
+import About from '../Pages/About';
+import Experience from '../Pages/Experience';
+import Header from './Header';
+import Footer from './Footer'
 
 class App extends Component {
     constructor(props) {
@@ -14,8 +14,30 @@ class App extends Component {
             navBG: ''
         };
 
+        this.jumbotronRef = React.createRef();
+
         this.opaqueNB = this.opaqueNB.bind(this);
         this.transparentNB = this.transparentNB.bind(this);
+        this.handleScroll = this.handleScroll.bind(this);
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll(e) {
+        // console.log('scroll detected');
+        let bottomOfJumbotron = this.jumbotronRef.current.getBoundingClientRect().height;
+        // console.log(this.jumbotronRef.current.getBoundingClientRect().height);
+        if (window.scrollY >= bottomOfJumbotron) {
+            this.opaqueNB();
+        } else if (window.scrollY <= bottomOfJumbotron) {
+            this.transparentNB();
+        }
     }
 
     opaqueNB() {
@@ -36,16 +58,20 @@ class App extends Component {
         return (
             <Router>
                 <div>
-                    <NavBar bg={this.state.navBG} />
+                    <Header bg={this.state.navBG} jumbotronRef={this.jumbotronRef} />
                     <Route name="home" 
                            exact path="/" 
                            render={(props) => <Home {...props}
+                                    // jumbotronRef={this.jumbotronRef}
                                     opaqueNB={this.opaqueNB} transparentNB={this.transparentNB} />}
                     />
                     {/* <Route name="about" path="#about" component={About} /> */}
                     <Route name="experience"
                            exact path="/experience" 
-                           component={Experience} />
+                           render={(props) => <Experience {...props}
+                                    // jumbotronRef={this.jumbotronRef} 
+                                    />}
+                    />
                     <Footer />
                 </div>
             </Router>
