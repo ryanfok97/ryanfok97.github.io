@@ -5,7 +5,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 class NavBar extends Component {
     render() {
         return (
-            <Navbar expand='md' fixed='top' bg={this.props.bg} className='transition'>
+            <Navbar expand='md' fixed='top' style={{backgroundColor: this.props.bg}} className='transition'>
                 <Navbar.Brand href='#home'>Ryan Fok</Navbar.Brand>
                 <Navbar.Collapse>
                     <Nav className="ml-auto">

@@ -3,15 +3,28 @@
 }
 
 .transition {
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.jumbotron-fluid {
+    display: flex;
+    align-items: center;
 }
 
 h1 {
-    padding: 5em;
+    color: rgb(255, 232, 132);
     text-align: center;
+    font-size: 5em;
+}
+
+h3 {
+    color: rgb(255, 232, 132);
+    text-align: center;
+    font-size: 2em;
+    font-style: italic;
 }
 
 footer {

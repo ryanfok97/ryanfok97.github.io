@@ -7,6 +7,7 @@ class Home extends Component {
         super(props);
 
         this.handleScroll = this.handleScroll.bind(this);
+        this.jumbotronRef = React.createRef();
     }
 
     componentDidMount() {
@@ -20,10 +21,11 @@ class Home extends Component {
     handleScroll(e) {
         console.log('scroll detected');
         let element = e.target;
-        console.log(window.scrollY)
-        if (window.scrollY >= 450) {
+        let bottomOfJumbotron = this.jumbotronRef.current.getBoundingClientRect().height;
+        console.log(this.jumbotronRef.current.getBoundingClientRect().height);
+        if (window.scrollY >= bottomOfJumbotron) {
             this.props.opaqueNB();
-        } else if (window.scrollY <= 450) {
+        } else if (window.scrollY <= bottomOfJumbotron) {
             this.props.transparentNB();
         }
     }
@@ -31,13 +33,20 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <Jumbotron fluid 
-                           style={{height: '100vh', backgroundImage: `url('${bgimg}')`, backgroundSize: 'cover'}}>
+                <Jumbotron fluid
+                           ref={this.jumbotronRef}
+                           style={{height: '100vh', background: `url('${bgimg}') fixed`, backgroundSize: 'cover'}}>
                     <Container>
-                        <h1>What's up?<br/>I'm Ryan Fok.</h1>
+                        <h3>
+                            What's up? I'm
+                        </h3>
+                        <h1>
+                            R<span style={{fontSize: '.8em'}}>YAN</span> F<span style={{fontSize: '.8em'}}>OK</span>
+                        </h1>
                     </Container>
                 </Jumbotron>
-                <div>
+                <div style={{marginTop: '200px', backgroundColor: 'white'}}>
+                    <p>
                     blah blah blah
                     <br/>
                     stuff about me lol
@@ -55,6 +64,24 @@ class Home extends Component {
                     here<br/>
                     <br/>
                     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                    Slam...<br/>
+                    poetry.<br/>
+                    Yelling! Angry! Waving my hands a LOT!<br/>
+                    Specific point of view on THINGS!<br/>
+                    Cynthia!<br/>
+                    Cyn-thi-a!<br/>
+                    Jesus died for our sin-thi-as!<br/>
+                    Jesus cried, runaway bride.<br/>
+                    Julia Roberts!<br/>
+                    Julia Rob...hurts!<br/>
+                    Cynthia!<br/>
+                    Ooh, Cynthia.<br/>
+                    You're dead. You are dead.<br/>
+                    Bop boop beep bop bop boop bop.<br/>
+                    You're dead.<br/>
+                    That's for Cynthia...<br/>
+                    who's dead.
+                    </p>
                 </div>
             </div>
         )
