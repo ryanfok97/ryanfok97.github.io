@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { browserHistory } from 'react-router';
-import Home from './Home';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Experience from './Pages/Experience';
 import NavBar from './Header/NavBar';
 import Footer from './Footer/Footer'
 
@@ -40,7 +42,10 @@ class App extends Component {
                            render={(props) => <Home {...props}
                                     opaqueNB={this.opaqueNB} transparentNB={this.transparentNB} />}
                     />
-                    <Route name="about" path="/about" />
+                    {/* <Route name="about" path="#about" component={About} /> */}
+                    <Route name="experience"
+                           exact path="/experience" 
+                           component={Experience} />
                     <Footer />
                 </div>
             </Router>

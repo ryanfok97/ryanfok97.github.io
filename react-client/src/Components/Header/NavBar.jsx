@@ -1,18 +1,25 @@
 import React, { Component } from 'react';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { Navbar, Nav } from 'react-bootstrap';
 
 class NavBar extends Component {
     render() {
         return (
-            <Navbar expand='md' fixed='top' style={{backgroundColor: this.props.bg}} className='transition'>
-                <Navbar.Brand href='#home'>Ryan Fok</Navbar.Brand>
-                <Navbar.Collapse>
-                    <Nav className="ml-auto">
-                        <Nav.Link href='#home'>About</Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
+            <header>
+                <Navbar expand='md' fixed='top' style={{backgroundColor: this.props.bg}} className='transition'>
+                    <Navbar.Brand as={Link} to='/'>Ryan Fok</Navbar.Brand>
+                    <Navbar.Collapse>
+                        <Nav className="ml-auto">
+                            <NavItem href='/'>
+                                <Nav.Link as={Link} to={'/'}>About</Nav.Link>
+                            </NavItem>
+                            <NavItem href='/experience'>
+                                <Nav.Link as={Link} to={'/experience'}>Experience</Nav.Link>
+                            </NavItem>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
+            </header>
         )
     }
 }

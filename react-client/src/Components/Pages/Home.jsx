@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Jumbotron, Container, Button } from 'react-bootstrap';
-import bgimg from '../../../IMG_6925.jpg';
+import bgimg from '../../../../IMG_6925.jpg';
 
 class Home extends Component {
     constructor(props) {
@@ -19,10 +19,9 @@ class Home extends Component {
     }
 
     handleScroll(e) {
-        console.log('scroll detected');
-        let element = e.target;
+        // console.log('scroll detected');
         let bottomOfJumbotron = this.jumbotronRef.current.getBoundingClientRect().height;
-        console.log(this.jumbotronRef.current.getBoundingClientRect().height);
+        // console.log(this.jumbotronRef.current.getBoundingClientRect().height);
         if (window.scrollY >= bottomOfJumbotron) {
             this.props.opaqueNB();
         } else if (window.scrollY <= bottomOfJumbotron) {
