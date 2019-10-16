@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavItem, Jumbotron, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import bgimg from '../../../IMG_6925.jpg';
+import bgimg from '../../../assets/IMG_6925.jpg';
 
 class Header extends Component {
     render() {
@@ -24,11 +24,11 @@ class Header extends Component {
                            ref={this.props.jumbotronRef}
                            style={{height: '100vh', background: `url('${bgimg}') fixed`, backgroundSize: 'cover'}}>
                     <Container>
-                        <h3>
-                            What's up? I'm
+                        <h3 className='header'>
+                            Hi, I'm
                         </h3>
-                        <h1>
-                            R<span style={{fontSize: '.8em'}}>YAN</span> F<span style={{fontSize: '.8em'}}>OK</span>
+                        <h1 className='header'>
+                            RYAN
                         </h1>
                     </Container>
                 </Jumbotron>
