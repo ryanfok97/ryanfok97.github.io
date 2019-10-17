@@ -15,14 +15,14 @@ class Header extends Component {
                                 <Nav.Link as={Link} to={'/'}>About</Nav.Link>
                             </NavItem>
                             <NavItem href='/experience'>
-                                <Nav.Link as={Link} to={'/experience'}>Experience</Nav.Link>
+                                <Nav.Link as={Link} to={'/experience'} className='links'>Experience</Nav.Link>
                             </NavItem>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
                 <Jumbotron fluid
                            ref={this.props.jumbotronRef}
-                           style={{height: '100vh', background: `url('${bgimg}') fixed`, backgroundSize: 'cover'}}>
+                           style={{height: '100vh', background: `url('${bgimg}') fixed`, backgroundSize: 'cover', marginBottom: '0'}}>
                     <Container>
                         <h3 className='header'>
                             Hi, I'm

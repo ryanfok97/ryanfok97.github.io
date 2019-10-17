@@ -6,6 +6,8 @@ import About from '../Pages/About';
 import Experience from '../Pages/Experience';
 import Header from './Header';
 import Footer from './Footer'
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 
 class App extends Component {
     constructor(props) {
@@ -14,6 +16,8 @@ class App extends Component {
             navBG: ''
         };
 
+        library.add(fab);
+        
         this.jumbotronRef = React.createRef();
 
         this.opaqueNB = this.opaqueNB.bind(this);
@@ -43,7 +47,7 @@ class App extends Component {
     opaqueNB() {
         // make it opaque
         this.setState(state => ({
-            navBG: 'cornflowerblue'
+            navBG: 'rgb(73, 115, 255)'
         }));
     }
 
