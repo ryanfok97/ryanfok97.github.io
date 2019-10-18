@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavItem, Jumbotron, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import bgimg from '../../../assets/IMG_6925.jpg';
+import bgimg from '../../../assets/jumbotron.jpg';
 
 class Header extends Component {
     render() {
         return (
             <header>
-                <Navbar expand='md' fixed='top' style={{backgroundColor: this.props.bg}} className='transition'>
+                <Navbar expand='md' fixed='top' variant='dark' className={'transition ' + this.props.bg}>
                     <Navbar.Brand as={Link} to='/'>Ryan Fok</Navbar.Brand>
                     <Navbar.Collapse>
                         <Nav className="ml-auto">

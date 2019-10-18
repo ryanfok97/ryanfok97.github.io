@@ -5,21 +5,32 @@ class Footer extends Component {
     render() {
         return (
             <footer>
+                <h5 className='center footer'>I love meeting new people. Connect with me!</h5>
                 <div className='center'>
-                    <FontAwesomeIcon 
-                        icon={['fab', 'facebook']}
-                        className='socials'
-                        size='3x'
-                        // style={{color: 'rgb(59, 89, 152)'}}
-                        inverse
-                    />
-                    <FontAwesomeIcon 
-                        icon={['fab', 'linkedin']}
-                        className='socials'
-                        size='3x'
-                        // style={{color: 'rgb(0, 123, 182)'}}
-                        inverse
-                    />
+                    <a href='https://www.facebook.com/ryanfok97'>
+                        <FontAwesomeIcon
+                            icon={['fab', 'facebook']}
+                            className='socials'
+                            size='3x'
+                            inverse
+                        />
+                    </a>
+                    <a href='https://www.linkedin.com/ryanfok'>
+                        <FontAwesomeIcon 
+                            icon={['fab', 'linkedin']}
+                            className='socials'
+                            size='3x'
+                            inverse
+                        />
+                    </a>
+                    <a href='https://www.github.com/ryanfok97'>
+                        <FontAwesomeIcon
+                            icon={['fab', 'github']}
+                            className='socials'
+                            size='3x'
+                            inverse
+                        />
+                    </a>
                 </div>
             </footer>
         )

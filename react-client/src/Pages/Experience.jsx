@@ -4,9 +4,9 @@ class Experience extends Component {
     render() {
         return (
             <div>
-                <p>
-                    This is an experience page.
-                </p>
+                <h1 style={{color: 'red'}}>
+                    Work In Progress
+                </h1>
             </div>
         )
     }

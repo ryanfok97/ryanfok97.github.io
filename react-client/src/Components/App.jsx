@@ -47,7 +47,7 @@ class App extends Component {
     opaqueNB() {
         // make it opaque
         this.setState(state => ({
-            navBG: 'rgb(73, 115, 255)'
+            navBG: 'opaque'
         }));
     }
 
