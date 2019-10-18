@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavItem, Jumbotron, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import bgimg from '../../../public/jumbotron.jpg';
+import bgimg from '../../../assets/jumbotron.jpg';
 
 class Header extends Component {
     render() {

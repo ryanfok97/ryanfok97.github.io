@@ -12,7 +12,7 @@ class Interests extends Component {
                     <Col xs sm='auto'>
                         <Figure>
                             <Figure.Image 
-                                src={require('../../../public/singing.jpg')}
+                                src={require('../../../assets/singing.jpg')}
                                 className='roundedBorder'
                                 width={300}
                                 fluid={false}
@@ -53,7 +53,7 @@ class Interests extends Component {
                     <Col xs sm='auto'>
                         <Figure>
                             <Figure.Image
-                                src={require('../../../public/sayaw.jpg')}
+                                src={require('../../../assets/sayaw.jpg')}
                                 className='roundedBorder'
                                 width={300}
                                 fluid={false}
@@ -69,7 +69,7 @@ class Interests extends Component {
                     <Col xs sm='auto'>
                         <Figure>
                             <Figure.Image
-                                src={require('../../../public/sudoku.jpg')}
+                                src={require('../../../assets/sudoku.jpg')}
                                 className='roundedBorder'
                                 width={300}
                                 fluid={false}
