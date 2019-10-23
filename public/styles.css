@@ -1,12 +1,13 @@
 /* GENERAL STYLING */
 * { font-family: 'Gayathri', sans-serif; }
 
-h1 {
+h2 {
     color: rgb(73, 115, 255);
+    font-size: 250%;
     margin-bottom: .5em;
 }
 
-p {
+p, li {
     font-size: 1.1em;
     color: rgb(59, 59, 59)
 }
@@ -15,7 +16,11 @@ a.text-link { text-decoration: none; }
 
 .center { text-align: center; }
 
+.light-gray-bg { background-color: lightgray; }
+
 .margin-bottom { margin-bottom: 2em; }
+
+.padded { padding: 2em 20em; }
 
 .roundedBorder { border-radius: 1em; }
 
@@ -37,6 +42,10 @@ a.text-link { text-decoration: none; }
     align-items: center;
 }
 
+.jumbotron-size {
+    height: '100vh';
+}
+
 .header {
     color: rgb(255, 255, 255);
     text-align: center;
@@ -50,13 +59,18 @@ h3.header {
 }
 
 /* HOMEPAGE BODY ELEMENTS */
-.interestTitle { color: rgb(37, 189, 57); }
+.greenText { color: rgb(37, 189, 57); }
+
+:root {
+    --primary: rgb(73, 115, 255);
+    --secondary: rgb(37,189,57);
+}
 
 /* FOOTER ELEMENTS */
 footer {
     background-color: rgb(73, 115, 255);
     display: block;
-    padding: 2em 0em;
+    padding: 2em 1em;
     width: 100%;
 }
 
@@ -67,4 +81,11 @@ h5.footer {
 
 .socials {
     margin: 0 .5em;
+}
+
+/* FOR SMALLER MEDIA */
+@media screen and (max-width: 800px) {
+    
+    .padded { padding: 1em 1em; }
+
 }

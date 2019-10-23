@@ -5,6 +5,7 @@ import bgimg from '../../../assets/jumbotron.jpg';
 
 class Header extends Component {
     render() {
+        // TODO: figure out jumbotron for mobile
         return (
             <header>
                 <Navbar expand='md' fixed='top' variant='dark' className={'transition ' + this.props.bg}>
