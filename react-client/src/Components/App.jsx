@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { browserHistory } from 'react-router';
 import Home from '../Pages/Home';
-import About from '../Pages/About';
 import Experience from '../Pages/Experience';
 import Header from './Header';
 import Footer from './Footer'

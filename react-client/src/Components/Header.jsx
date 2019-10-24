@@ -5,11 +5,12 @@ import bgimg from '../../../assets/jumbotron.jpg';
 
 class Header extends Component {
     render() {
-        // TODO: figure out jumbotron for mobile
+        // TODO: figure out jumbotron for mobile, try to get bottom of navbar = jumbotron change background instead
         return (
             <header>
                 <Navbar expand='md' fixed='top' variant='dark' className={'transition ' + this.props.bg}>
                     <Navbar.Brand as={Link} to='/'>Ryan Fok</Navbar.Brand>
+                    <Navbar.Toggle aria-controls='responsive-navbar-nav' />
                     <Navbar.Collapse>
                         <Nav className="ml-auto">
                             <NavItem href='/'>
