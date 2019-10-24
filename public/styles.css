@@ -2,12 +2,12 @@
 * { font-family: 'Gayathri', sans-serif; }
 
 h2 {
-    font-size: 250%;
-    margin-bottom: .5em;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 p, li {
-    font-size: 1.1em;
+    font-size: 1.1rem;
     color: rgb(59, 59, 59)
 }
 
@@ -15,11 +15,11 @@ a.text-link { text-decoration: none; }
 
 .center { text-align: center; }
 
-.margin-bottom { margin-bottom: 2em; }
+.margin-bottom { margin-bottom: 2rem; }
 
-.padded { padding: 2em 10em; }
+.padded { padding: 2rem 10rem; }
 
-.roundedBorder { border-radius: 1em; }
+.roundedBorder { border-radius: 1.5rem; }
 
 .v-align { align-items: center; }
 
@@ -55,10 +55,10 @@ a.text-link { text-decoration: none; }
     text-align: center;
 }
 
-h1.header { font-size: 5em; }
+h1.header { font-size: 5rem; }
 
 h3.header {
-    font-size: 2em;
+    font-size: 2rem;
     font-style: italic;
 }
 
@@ -69,22 +69,22 @@ h3.header {
 footer {
     background-color: rgb(73, 115, 255);
     display: block;
-    padding: 2em 1em;
+    padding: 2rem 1rem;
     width: 100%;
 }
 
 h5.footer {
     color: white;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 .socials {
-    margin: 0 .5em;
+    margin: 0 1rem;
 }
 
 /* FOR SMALLER MEDIA */
 @media screen and (max-width: 800px) {
     
-    .padded { padding: 1em 1em; }
+    .padded { padding: 1rem 1rem; }
 
 }
