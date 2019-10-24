@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { Figure, Col, Row } from 'react-bootstrap';
+import { Container, Figure, Col, Row } from 'react-bootstrap';
 
 class Interests extends Component {
     render() {
         let width = window.innerWidth;
         if (width > 768) {
         return (
-            <div className={this.props.classes}>
+            <Container fluid className={this.props.classes}>
                 <h2 className='center my-primary'>Some of my interests.</h2>
                 <Row className='margin-bottom v-align'>
                     <Col xs sm='auto'>
@@ -92,13 +92,13 @@ class Interests extends Component {
                         </p>
                     </Col>
                 </Row>
-            </div>
+            </Container>
         );
         } else {
             // TODO: only difference is centering everything and order of picture, description -- see if 
             // there's a better way to organize this
             return (
-                <div className={'center ' + this.props.classes}>
+                <Container fluid className={'center ' + this.props.classes}>
                     <h2 className='my-primary'>Some of my interests.</h2>
                     <Row className='margin-bottom v-align'>
                         <Col xs sm='auto'>
@@ -184,7 +184,7 @@ class Interests extends Component {
                             </p>
                         </Col>
                     </Row>
-                </div>
+                </Container>
             );
         }
     }

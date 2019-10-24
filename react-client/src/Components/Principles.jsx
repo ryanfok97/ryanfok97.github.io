@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import Container from 'react-bootstrap/Container';
 
 class Principles extends Component {
     render() {
         return (
-            <div className={this.props.classes}>
+            <Container fluid className={this.props.classes}>
                 <h2 className='my-primary'>Some principles I live by.</h2>
                 <h3>Have fun and be yourself.</h3>
                 <h3>Do what you love doing.</h3>
@@ -12,7 +13,7 @@ class Principles extends Component {
                 <h3>Always learn from mistakes and failures.</h3>
                 <h3>Live life without regret; don't wonder "what if".</h3>
                 <h3>Be a better you than you were yesterday.</h3>
-            </div>
+            </Container>
         );
     }
 }

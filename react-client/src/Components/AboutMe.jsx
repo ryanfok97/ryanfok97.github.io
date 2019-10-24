@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import Container from 'react-bootstrap/Container';
 
 class AboutMe extends Component {
     render() {
         return (
-            <div className={this.props.classes}>
+            <Container fluid className={this.props.classes}>
                 <h2 className='center my-primary'>
                     A little about me.
                 </h2>
@@ -24,7 +25,7 @@ class AboutMe extends Component {
                     Computer Science as a challenging way to solve pieces of the problems we face in the
                     puzzle that is our increasingly technological society.
                 </p>
-            </div>
+            </Container>
         );
     }
 }
