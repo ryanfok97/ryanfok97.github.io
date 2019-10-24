@@ -7,7 +7,7 @@ class Interests extends Component {
         if (width > 768) {
         return (
             <div className={this.props.classes}>
-                <h2 className='center'>Some of my interests.</h2>
+                <h2 className='center my-primary'>Some of my interests.</h2>
                 <Row className='margin-bottom v-align'>
                     <Col xs sm='auto'>
                         <Figure>
@@ -24,7 +24,7 @@ class Interests extends Component {
                         </Figure>
                     </Col>
                     <Col>
-                        <h3 className='interestTitle'>Music.</h3>
+                        <h3 className='my-secondary'>Music.</h3>
                         <p>
                             Music plays a major role in my daily life; I can sing, play guitar (classical
                             and acoustic), and play ukulele. More often than not, I'm listening to music
@@ -39,7 +39,7 @@ class Interests extends Component {
                 </Row>
                 <Row className='margin-bottom v-align'>
                     <Col>
-                        <h3 className='interestTitle'>Dance.</h3>
+                        <h3 className='my-secondary'>Dance.</h3>
                         <p>
                             More recently, I've fallen in love with dance. In college, I participated in
                             both <a href='https://www.facebook.com/sayaw.fasa.uw/' className='text-link'
@@ -81,7 +81,7 @@ class Interests extends Component {
                         </Figure>
                     </Col>
                     <Col>
-                        <h3 className='interestTitle'>Games.</h3>
+                        <h3 className='my-secondary'>Games.</h3>
                         <p>
                             Yes, I do play video games, though I'll usually play ones that involve some sort of
                             strategy so that I'm not just mindlessly clicking away. However, I probably spend
@@ -99,7 +99,7 @@ class Interests extends Component {
             // there's a better way to organize this
             return (
                 <div className={'center ' + this.props.classes}>
-                    <h2>Some of my interests.</h2>
+                    <h2 className='my-primary'>Some of my interests.</h2>
                     <Row className='margin-bottom v-align'>
                         <Col xs sm='auto'>
                             <Figure>
@@ -116,7 +116,7 @@ class Interests extends Component {
                             </Figure>
                         </Col>
                         <Col>
-                            <h3 className='greenText'>Music.</h3>
+                            <h3 className='my-secondary'>Music.</h3>
                             <p>
                                 Music plays a major role in my daily life; I can sing, play guitar (classical
                                 and acoustic), and play ukulele. More often than not, I'm listening to music
@@ -145,7 +145,7 @@ class Interests extends Component {
                             </Figure>
                         </Col>
                         <Col>
-                            <h3 className='greenText'>Dance.</h3>
+                            <h3 className='my-secondary'>Dance.</h3>
                             <p>
                                 More recently, I've fallen in love with dance. In college, I participated in
                                 both <a href='https://www.facebook.com/sayaw.fasa.uw/' className='text-link'
@@ -173,7 +173,7 @@ class Interests extends Component {
                             </Figure>
                         </Col>
                         <Col>
-                            <h3 className='greenText'>Games.</h3>
+                            <h3 className='my-secondary'>Games.</h3>
                             <p>
                                 Yes, I do play video games, though I'll usually play ones that involve some sort of
                                 strategy so that I'm not just mindlessly clicking away. However, I probably spend

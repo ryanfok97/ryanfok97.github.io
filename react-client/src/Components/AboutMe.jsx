@@ -4,13 +4,13 @@ class AboutMe extends Component {
     render() {
         return (
             <div className={this.props.classes}>
-                <h2 className='center'>
+                <h2 className='center my-primary'>
                     A little about me.
                 </h2>
                 <p className='center'>
                     I'm Ryan, a graduate of the University of Washington with a B.S. in
                     Computer Science. Wisconsin-born and Washington-raised, I come from a family
-                    of medical professionals, which may beg the question,<br/>why Computer Science?<br/>
+                    of medical professionals, which may beg the question, why Computer Science?<br/>
                     <br/>
                     <b>The short answer:</b><br/>
                     I love problem-solving, challenging myself, and puzzles of all kinds.<br/>

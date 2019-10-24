@@ -2,7 +2,6 @@
 * { font-family: 'Gayathri', sans-serif; }
 
 h2 {
-    color: rgb(73, 115, 255);
     font-size: 250%;
     margin-bottom: .5em;
 }
@@ -16,15 +15,20 @@ a.text-link { text-decoration: none; }
 
 .center { text-align: center; }
 
-.light-gray-bg { background-color: lightgray; }
-
 .margin-bottom { margin-bottom: 2em; }
 
-.padded { padding: 2em 20em; }
+.padded { padding: 2em 10em; }
 
 .roundedBorder { border-radius: 1em; }
 
 .v-align { align-items: center; }
+
+/* COLORS */
+.my-primary { color: rgb(73, 115, 255) }
+
+.my-secondary { color: rgb(37, 189, 57); }
+
+.light-gray-bg { background-color: lightgray; }
 
 /* NAVBAR ELEMENTS */
 .opaque { background-color: rgb(73, 115, 255); }
@@ -59,12 +63,7 @@ h3.header {
 }
 
 /* HOMEPAGE BODY ELEMENTS */
-.greenText { color: rgb(37, 189, 57); }
 
-:root {
-    --primary: rgb(73, 115, 255);
-    --secondary: rgb(37,189,57);
-}
 
 /* FOOTER ELEMENTS */
 footer {
