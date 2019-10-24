@@ -9,10 +9,10 @@ class Header extends Component {
         return (
             <header>
                 <Navbar expand='md' fixed='top' variant='dark' className={'transition ' + this.props.bg}>
-                    <Navbar.Brand as={Link} to='/'>Ryan Fok</Navbar.Brand>
+                    <Navbar.Brand as={Link} to={'/'}>Ryan Fok</Navbar.Brand>
                     <Navbar.Toggle aria-controls='responsive-navbar-nav' />
                     <Navbar.Collapse>
-                        <Nav className="ml-auto">
+                        <Nav className='ml-auto'>
                             <NavItem href='/'>
                                 <Nav.Link as={Link} to={'/'}>About</Nav.Link>
                             </NavItem>

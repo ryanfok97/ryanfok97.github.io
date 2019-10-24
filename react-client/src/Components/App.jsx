@@ -1,12 +1,14 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import React, { useEffect, Component } from 'react';
+import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-router-dom';
 import { browserHistory } from 'react-router';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+
 import Home from '../Pages/Home';
 import ExperiencePage from '../Pages/ExperiencePage';
 import Header from './Header';
 import Footer from './Footer'
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
+import ScrollToTop from './ScrollToTop';
 
 class App extends Component {
     constructor(props) {
@@ -60,21 +62,21 @@ class App extends Component {
     render() {
         return (
             <Router>
+                <ScrollToTop />
                 <div>
                     <Header bg={this.state.navBG} jumbotronRef={this.jumbotronRef} />
-                    <Route name="home" 
-                           exact path="/" 
-                           render={(props) => <Home {...props}
-                                    // jumbotronRef={this.jumbotronRef}
-                                    opaqueNB={this.opaqueNB} transparentNB={this.transparentNB} />}
-                    />
-                    {/* <Route name="about" path="#about" component={About} /> */}
-                    <Route name="experience"
-                           exact path="/experience" 
-                           render={(props) => <ExperiencePage {...props}
-                                    // jumbotronRef={this.jumbotronRef} 
-                                    />}
-                    />
+                    <Switch>
+                        <Route name="experience"
+                            exact path="/experience" 
+                        >
+                            <ExperiencePage />
+                        </Route>
+                        <Route name="home" 
+                            exact path="/" 
+                        >
+                            <Home />
+                        </Route>
+                    </Switch>
                     <Footer />
                 </div>
             </Router>
