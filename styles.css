@@ -1,13 +1,13 @@
 /* GENERAL STYLING */
 * { font-family: 'Gayathri', sans-serif; }
 
-h1 {
-    color: rgb(73, 115, 255);
-    margin-bottom: .5em;
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
-p {
-    font-size: 1.1em;
+p, li {
+    font-size: 1.1rem;
     color: rgb(59, 59, 59)
 }
 
@@ -15,11 +15,26 @@ a.text-link { text-decoration: none; }
 
 .center { text-align: center; }
 
-.margin-bottom { margin-bottom: 2em; }
+.image-bg {
+    background-color: lightgray;
+    background-size: 300 300;
+    padding: 1rem 1rem;
+}
 
-.roundedBorder { border-radius: 1em; }
+.margin-bottom { margin-bottom: 2rem; }
+
+.padded { padding: 2rem 10rem; }
+
+.roundedBorder { border-radius: 1.5rem; }
 
 .v-align { align-items: center; }
+
+/* COLORS */
+.my-primary { color: rgb(73, 115, 255) }
+
+.my-secondary { color: rgb(37, 189, 57); }
+
+.light-gray-bg { background-color: lightgray; }
 
 /* NAVBAR ELEMENTS */
 .opaque { background-color: rgb(73, 115, 255); }
@@ -37,34 +52,45 @@ a.text-link { text-decoration: none; }
     align-items: center;
 }
 
+.jumbotron-size {
+    height: '100vh';
+}
+
 .header {
     color: rgb(255, 255, 255);
     text-align: center;
 }
 
-h1.header { font-size: 5em; }
+h1.header { font-size: 5rem; }
 
 h3.header {
-    font-size: 2em;
+    font-size: 2rem;
     font-style: italic;
 }
 
 /* HOMEPAGE BODY ELEMENTS */
-.interestTitle { color: rgb(37, 189, 57); }
+
 
 /* FOOTER ELEMENTS */
 footer {
     background-color: rgb(73, 115, 255);
     display: block;
-    padding: 2em 0em;
+    padding: 2rem 1rem;
     width: 100%;
 }
 
 h5.footer {
     color: white;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 .socials {
-    margin: 0 .5em;
+    margin: 0 1rem;
+}
+
+/* FOR SMALLER MEDIA */
+@media screen and (max-width: 800px) {
+    
+    .padded { padding: 1rem 1rem; }
+
 }
