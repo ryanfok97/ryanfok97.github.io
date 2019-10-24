@@ -69,8 +69,8 @@ class Interests extends Component {
                     <Col xs sm='auto'>
                         <Figure>
                             <Figure.Image
-                                src={require('../../../assets/sudoku.jpg')}
-                                className='roundedBorder'
+                                src={require('../../../assets/sudoku.png')}
+                                className='roundedBorder image-bg'
                                 width={300}
                                 fluid={false}
                                 alt='A screenshot from a sudoku app I made to learn ReactJS.'

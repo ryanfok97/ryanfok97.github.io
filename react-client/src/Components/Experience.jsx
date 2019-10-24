@@ -9,7 +9,7 @@ class Experience extends Component {
                     <Col xs sm='auto'>
                         <Image
                             src={require('../../../assets/cselogo.png')}
-                            className='roundedBorder'
+                            className='roundedBorder image-bg'
                             width={300}
                         />
                     </Col>
@@ -33,8 +33,8 @@ class Experience extends Component {
                 <Row className='margin-bottom v-align'>
                     <Col xs sm='auto'>
                         <Image
-                            src={require('../../../assets/genoalogo.jpg')}
-                            className='roundedBorder'
+                            src={require('../../../assets/genoalogo.png')}
+                            className='roundedBorder image-bg'
                             width={300}
                         />
                     </Col>
@@ -59,7 +59,7 @@ class Experience extends Component {
                     <Col xs sm='auto'>
                         <Image
                             src={require('../../../assets/fasalogo.png')}
-                            className='roundedBorder'
+                            className='roundedBorder image-bg'
                             width={300}
                         />
                     </Col>
@@ -84,7 +84,7 @@ class Experience extends Component {
                     <Col xs sm='auto'>
                         <Image
                             src={require('../../../assets/cklogo.png')}
-                            className='roundedBorder'
+                            className='roundedBorder image-bg'
                             width={300}
                         />
                     </Col>
@@ -109,7 +109,7 @@ class Experience extends Component {
                     <Col xs sm='auto'>
                         <Image
                             src={require('../../../assets/fasalogo.png')}
-                            className='roundedBorder'
+                            className='roundedBorder image-bg'
                             width={300}
                         />
                     </Col>

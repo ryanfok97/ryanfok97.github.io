@@ -6,9 +6,9 @@ class ExperiencePage extends Component {
     render() {
         return (
             <div className='padded'>
-                <h1 className='center my-primary'>
+                <h2 className='center my-primary'>
                     Some things I've done.
-                </h1>
+                </h2>
                 <Experience />
             </div>
         )
