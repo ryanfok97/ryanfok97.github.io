@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { browserHistory } from 'react-router';
 import Home from '../Pages/Home';
-import Experience from '../Pages/Experience';
+import ExperiencePage from '../Pages/ExperiencePage';
 import Header from './Header';
 import Footer from './Footer'
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -71,7 +71,7 @@ class App extends Component {
                     {/* <Route name="about" path="#about" component={About} /> */}
                     <Route name="experience"
                            exact path="/experience" 
-                           render={(props) => <Experience {...props}
+                           render={(props) => <ExperiencePage {...props}
                                     // jumbotronRef={this.jumbotronRef} 
                                     />}
                     />

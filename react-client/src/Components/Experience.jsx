@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
-import { Image, Row, Col } from 'react-bootstrap';
+import { Container, Image, Row, Col } from 'react-bootstrap';
 
 class Experience extends Component {
     render() {
         return (
-            <div className='padded'>
-                <h1 className='center my-primary'>
-                    Some things I've done.
-                </h1>
+            <Container>
                 <Row className='margin-bottom v-align'>
                     <Col xs sm='auto'>
                         <Image
@@ -131,8 +128,8 @@ class Experience extends Component {
                         </ul>
                     </Col>
                 </Row>
-            </div>
-        )
+            </Container>
+        );
     }
 }
 
