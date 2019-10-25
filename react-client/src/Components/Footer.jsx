@@ -31,6 +31,14 @@ class Footer extends Component {
                             inverse
                         />
                     </a>
+                    <a href='mailto:ryanfok@cs.washington.edu'>
+                        <FontAwesomeIcon
+                            icon={['fas', 'envelope']}
+                            className='socials'
+                            size='3x'
+                            inverse
+                        />
+                    </a>
                 </div>
             </footer>
         )

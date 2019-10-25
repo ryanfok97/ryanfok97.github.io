@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-route
 import { browserHistory } from 'react-router';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
 
 import Home from '../Pages/Home';
 import ExperiencePage from '../Pages/ExperiencePage';
@@ -18,6 +19,7 @@ class App extends Component {
         };
 
         library.add(fab);
+        library.add(fas);
         
         this.jumbotronRef = React.createRef();
 
