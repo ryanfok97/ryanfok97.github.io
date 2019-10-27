@@ -22,10 +22,13 @@ class Experience extends Component {
                                 Co-led a quiz section of 20+ students for an experimental 
                                 Introduction to Data Science course
                             </li>
-                            <li>Assisted students in debugging their code</li>
+                            <li>
+                                Assisted students in debugging their code by walking through
+                                it with them
+                            </li>
                             <li>
                                 Held weekly office hours to grade projects and help students
-                                get past obstacles
+                                get past any obstacles
                             </li> 
                         </ul>
                     </Col>
@@ -45,13 +48,13 @@ class Experience extends Component {
                         <ul>
                             <li>
                                 Developed a program to parse and organize pharmacy claims data into
-                                SQL tables to cut costs across the company
+                                SQL tables to help with cost analysis
                             </li>
                             <li>
                                 Developed a web application to streamline call center campaigns and
                                 handle the movement of patient data
                             </li>
-                            <li>Tested internal applications throughout development using JIRA</li>
+                            <li>Tested internal business applications throughout development using JIRA</li>
                         </ul>
                     </Col>
                 </Row>
@@ -68,7 +71,7 @@ class Experience extends Component {
                         <h5 className='my-secondary'>Filipino American Student Association at UW</h5>
                         <h5 className='text-secondary'>May 2018 - Jun. 2019</h5>
                         <ul>
-                            <li>Led a 100+ member student organization and a 13 officer team</li>
+                            <li>Led a 100+ member student organization with a 13-officer team</li>
                             <li>
                                 Promoted leadership development for officers and members through
                                 workshops and alumni networking
